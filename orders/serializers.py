@@ -23,3 +23,4 @@ class OrderSerializer(serializers.ModelSerializer):
             'id' , 'user', 'user_username' , 'status', 'created_at', 'updated_at', "final_sum",
             'items'
         ]
+        read_only_fields = ['user' , 'user_name', 'final_sum']
